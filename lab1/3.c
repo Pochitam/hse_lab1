@@ -31,15 +31,18 @@ int freqNum(int* ptrArr ,int n ,int x) {
 
 int main(){
     int N;
+    printf("Длинна массива:\n");
     scanf("%d", &N);
     int arr[N];
     int* ptrArr = &arr[0];
+    printf("Элементы массива:\n");
     for (int i=0; i<N; i++){
         int x;
         scanf("%d", &x);
         *(ptrArr+i) = x;
     }
-    int x; 
-    scanf("%d", &x);
-    freqNum(arr, N, x);
+    int start; 
+    printf("Число - начало массива:\n");
+    scanf("%d", &start);
+    freqNum(arr, N, start);
 }
