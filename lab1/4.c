@@ -23,9 +23,13 @@ int main(){
     vvod(ptrArr, n1);
     vvod(ptrArr2, n2);
     func(ptrArr, n1, ptrArr2, n2);
+    for (int i=0; i<n2; ++i){
+        printf("%d ", *(ptrArr2+i));
+    }
     for (int i=0; i<n2+n1; ++i){
         printf("%d ", *(ptrArr2+i));
     }
     free(ptrArr);
     free(ptrArr2);
 }
+
